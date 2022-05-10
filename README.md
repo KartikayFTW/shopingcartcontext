@@ -1,3 +1,6 @@
+# Live demo 
+https://kartikayftw.github.io/shopingcartcontext/
+click on Home after loading
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
