@@ -1,13 +1,13 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import SingleProduct from "./SingleProduct";
+import { Cartctx } from "./store/Context";
 
-const Cart = ({ cart, setCart }) => {
+const Cart = () => {
   const [total, setTotal] = useState();
+  const { cart, setCart } = useContext(Cartctx);
   useEffect(() => {
     setTotal(cart.reduce((acc, curr) => acc + Number(curr.price), 0));
   }, [cart]);
-
-  console.log(total);
 
   return (
     <div style={{ textAlign: "center" }}>
